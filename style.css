@@ -1,0 +1,170 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Estilo de los iconos*/
+.material-icons {
+  font-family: "Material Icons";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px; /* Puede cambiarse a rem, em, etc. */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+}
+
+.weather-container {
+  background-image: url("/img/nuebes-sol.jpeg");
+  background-size: cover;
+  color: white;
+  font-size: 18px;
+  max-width: 450px;
+  margin: 10px auto;
+  background-color: #333;
+  padding: 10px;
+  border-radius: 50px;
+}
+
+.current {
+  background: rgba(46, 112, 210, 0.46);
+  background: linear-gradient(
+    0deg,
+    rgb(16, 99, 163) 0%,
+    rgb(3, 150, 255) 42%,
+    rgba(3, 200, 255, 0.466) 100%
+  );
+  border-radius: 40px;
+  padding: 40px;
+}
+.city {
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+.day {
+  text-align: center;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.info .temperature {
+  font-size: 48px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.info .temperature .temperature-now {
+  font-size: 70px;
+  margin: 0;
+}
+.info .temperature .temperature-low {
+  font-size: 32px;
+  color: rgba(255, 255, 255, 0.7);
+}
+.status {
+  color: rgba(255, 255, 255, 0.7);
+}
+.more {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  gap: 10px;
+  text-align: center;
+}
+
+.icon span {
+  font-size: 28px;
+  color: rgba(255, 255, 255, 0.7);
+}
+.text {
+  font-weight: bold;
+}
+.type {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Segunda parte */
+.list {
+  padding: 50px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.day-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.name {
+  width: 123.3px;
+  font-weight: bold;
+}
+.weather {
+  width: 123px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.temperature {
+  width: 123px;
+  display: flow;
+}
+
+.temperature-low {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+@media only screen and (max-width: 450px) {
+  .row {
+    display: flex;
+    flex-direction: column;
+  }
+  .list {
+    padding: 50px 40px;
+    gap: 20px;
+  }
+
+  .day-list {
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    background: rgba(46, 112, 210, 0.46);
+    background: linear-gradient(
+      0deg,
+      rgba(16, 99, 163, 0.424) 0%,
+      rgba(3, 150, 255, 0.541) 42%,
+      rgba(3, 200, 255, 0.466) 100%
+    );
+    border-radius: 20px;
+    padding: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+  }
+
+  .name {
+    width: auto;
+    margin-bottom: 0;
+  }
+
+  .weather {
+    width: auto;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .temperature {
+    width: auto;
+    text-align: right;
+  }
+}
